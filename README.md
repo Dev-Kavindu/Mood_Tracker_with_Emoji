@@ -1,16 +1,69 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🧘 MoodTracker
 
-# Getting Started
+A beautiful and intuitive mood tracking application built with React Native. Track your daily emotions with expressive emojis and keep a history of your emotional journey.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## ✨ Features
 
-## Step 1: Start Metro
+- 🎨 **Rich Emoji Selection**: Choose from 40+ different emojis to express your current mood
+- 📈 **Mood History**: Keep track of your moods over time with timestamps
+- 📱 **Cross-Platform**: Works on Android devices (iOS support coming soon)
+- 🔄 **Real-time Updates**: Instant feedback when selecting a mood
+- 🧹 **Shake-to-Clear**: Shake your device to clear all mood history
+- 💾 **Local Storage**: All mood data is stored locally on your device
+- 🔊 **Haptic Feedback**: Subtle vibrations for better user experience
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 📸 Screenshots
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+| Mood Selection | Mood History |
+| --- | --- |
+| ![Mood Selection](assets/mood-selection.png) | ![Mood History](assets/mood-history.png) |
 
-```sh
+> Currently tested and working on Android only
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- For iOS: Xcode and CocoaPods
+- For Android: Android Studio and Android SDK
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/MoodTracker.git
+cd MoodTracker
+```
+
+2. Install dependencies:
+
+```bash
+# Using npm
+npm install
+
+# OR using Yarn
+yarn install
+```
+
+3. For iOS, install CocoaPods dependencies:
+
+```bash
+# Navigate to iOS directory
+cd ios
+pod install
+
+# Go back to root directory
+cd ..
+```
+
+### Running the Application
+
+#### Start Metro Bundler
+
+```bash
 # Using npm
 npm start
 
@@ -18,13 +71,9 @@ npm start
 yarn start
 ```
 
-## Step 2: Build and run your app
+#### Run on Android
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
+```bash
 # Using npm
 npm run android
 
@@ -32,25 +81,13 @@ npm run android
 yarn android
 ```
 
-### iOS
+> Note: Currently tested and working on Android only
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+#### Run on iOS
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+> iOS support coming soon
 
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
+```bash
 # Using npm
 npm run ios
 
@@ -58,40 +95,75 @@ npm run ios
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🎯 How to Use
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+1. Browse through the available moods and select the emoji that best represents how you're feeling
+2. Your selection will be saved automatically with a timestamp
+3. View your mood history at the bottom of the screen
+4. To clear all mood history, simply shake your device
 
-## Step 3: Modify your app
+## 🏗️ Tech Stack
 
-Now that you have successfully run the app, let's make changes!
+- **React Native**: Cross-platform mobile development
+- **TypeScript**: Type-safe JavaScript
+- **AsyncStorage**: Local data persistence
+- **react-native-shake**: Device shake detection
+- **react-native-safe-area-context**: Safe area handling for different devices
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 📁 Project Structure
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+```
+MoodTracker/
+├── App.tsx                 # Main application component
+├── package.json            # Project dependencies and scripts
+├── assets/                 # Static assets (images, icons)
+├── android/                # Android native code
+├── ios/                    # iOS native code
+└── README.md              # Project documentation
+```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 🤝 Contributing
 
-## Congratulations! :tada:
+We welcome contributions to MoodTracker! Here's how you can help:
 
-You've successfully run and modified your React Native App. :partying_face:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
 
-### Now what?
+## 🐛 Issues
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+If you encounter any bugs or have feature requests, please [open an issue](https://github.com/your-username/MoodTracker/issues).
 
-# Troubleshooting
+## 📄 License
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Learn More
+## 👨‍💻 Author
 
-To learn more about React Native, take a look at the following resources:
+[Kavindu Chamiod](https://github.com/kavinduchamiod)
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 🙏 Acknowledgments
+
+- Thanks to the React Native community for the amazing ecosystem
+- Inspired by the importance of mental health awareness
+- Emoji artwork and design
+
+## 📱 Download
+
+Download the Android APK from [Google Drive](https://drive.google.com/file/d/1C9ki-1FB-jY6rcSdsD2WGLyGjTf2qA80/view?usp=drive_link)
+
+## 🌐 Connect
+
+- Portfolio: [musical-tarsier-e910c0.netlify.app](https://musical-tarsier-e910c0.netlify.app)
+- WhatsApp: [+94772782740](https://wa.me/94772782740)
+
+## 📞 Support
+
+If you have any questions or need help, feel free to reach out at [kchamod1124@gmail.com](mailto:kchamod1124@gmail.com)
+
+---
+
+⭐ If you found this project helpful, please give it a star!
