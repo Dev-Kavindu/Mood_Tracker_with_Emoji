@@ -14,9 +14,7 @@ A beautiful and intuitive mood tracking application built with React Native. Tra
 
 ## 📸 Screenshots
 
-| Mood Selection | Mood History |
-| --- | --- |
-| ![Mood Selection](assets/mood-selection.png) | ![Mood History](assets/mood-history.png) |
+Screenshots available in the assets folder
 
 > Currently tested and working on Android only
 
